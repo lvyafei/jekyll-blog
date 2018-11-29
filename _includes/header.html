@@ -1,0 +1,36 @@
+<header class="site-header" style="background-image:url('/images/green.svg');background-size: 2240px 374px;height: 234px">
+
+  <div class="wrapper" style="height:170px;background-image:url('/images/bgpic.png');background-size: 100% 100%;">
+
+    <a class="site-title" href="{{ site.baseurl }}/" style="display:none"><h1>{{ site.title }}</h1></a>
+     <div style="width:60px;height:60px;">
+       <svg contentScriptType="text/ecmascript" viewBox="0 0 350 350" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full"
+        zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+        version="1.0">
+        <path fill="none" d="M 196.0 116.0 C 239.0 86.0 310.0 22.0 247.0 103.0 C 184.0 184.0 111.0 215.0 189.0 233.0 C 267.0 
+            251.0 274.0 341.0 267.0 250.0 C 260.0 159.0 373.0 85.0 267.0 158.0 C 161.0 231.0 133.0 213.0 255.0 211.0 C 377.0 
+            209.0 377.0 209.0 377.0 210.0 C 377.0 211.0 377.0 211.0 377.0 211.0" stroke="white"/>
+        </svg>
+      </div>
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+ 
+      <div class="trigger">
+        <a class="page-link" href="/design" style="font-weight:bold;font-size:25px;">设计之都</a>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}" style="font-weight:bold;font-size: 25px;">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+  </div>
+
+</header>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <script>
+      daovoice('init', {
+        app_id: "f7d7d8c7",
+      });
+      daovoice('update');
+    </script>
+    <div>
+      <div class="page-content" style="position:relative;">
+        <img class="blur" src="/images/bg.jpg" style="position:absolute;z-index:10;width:100%;height:100%" />
+        <div style="position:relative;z-index: 30;">
+          {{ content }}
+        </div>
+      </div>
+      <div>
+        {% include footer.html %}
+      </div>
+    </div>
+
+  </body>
+
+</html>

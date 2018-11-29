@@ -1,0 +1,27 @@
+# Site settings
+title: FeSa Tech Blog
+email: 244328187@qq.com
+description: > # this means to ignore newlines until "baseurl:"
+  this is a developer blog site build by lvyf
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://lvyafei.github.io" # the base hostname & protocol for your site
+twitter_username: 
+github_username: lvyafei
+sina_url: "1627099732"
+sina_name: 爱飞的飒
+
+# Build settings
+markdown: kramdown
+
+# 代码高亮
+highlhter: pygments
+pygments: true 
+
+# 文章摘要
+excerpt_separator: "<!-- more -->"
+
+# discus
+comments :
+    provider : duoshuo
+    duoshuo : 
+      short_name : lvyafei

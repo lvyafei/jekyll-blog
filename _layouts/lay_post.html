@@ -1,0 +1,97 @@
+---
+layout: default
+---
+ <style>
+    
+    #meuid:before {
+    content: "文章目录";
+    font-weight: bold;
+    }
+/*
+    ul#meuid {
+    list-style: none;
+    position: fixed;
+    padding: 0px;
+    left: 80px;
+    top: 370px;
+    border-radius: 0.3em;
+    box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
+    box-sizing: border-box;
+    border: #fff 0.5em solid;
+    background-color: white;
+    overflow: auto;
+    max-height: 230px;
+     }
+*/
+    #content{
+       display:none;
+       position:fixed;
+       width:100%;
+       height:100%;
+       z-index:100;
+       background:#000;
+       top:0px;
+       filter:alpha(opacity=85);
+    }
+    #content_img{
+       display:none;
+       position:fixed;
+       z-index:101;
+       width:100%;
+       height:100%;
+       overflow: auto;
+       text-align:center;
+       top:0px;
+       left:0px;
+       cursor: pointer;
+    }
+
+  </style>
+<div class="post container">
+  <div class="row">
+    <div class="col-md-2">
+       <div style="border:1px #AA6708 solid;border-left:5px #AA6708 solid;border-radius:3px;padding:20px">
+         <h3>Property</h3>
+         {% if page.categories != empty %}
+         <h5><a href="/tags/?type=cat&cname={{page.categories}}" style="color:black;"><i class="glyphicon glyphicon-paperclip"></i> <span> {{ page.categories }}</span></a></h5>
+         {% endif %}
+         {% if page.tags != empty %}
+         <h5><a href="/tags/?type=tag&cname={{page.tags}}" style="color:black;"><i class="glyphicon glyphicon-tag"></i> <span> {{ page.tags }}</span></a></h5>
+         {% endif %}
+         {% if page.author != empty %}
+         <h5><i class="glyphicon glyphicon-user"></i> <span> {{ page.author }}</span></h5>
+         {% endif %}
+       </div>
+    </div>
+    <div class="col-md-10">
+       <div class="well">
+          <header class="post-header">
+           <h1 class="post-title">{{ page.title }}</h1>
+           <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+          </header>
+
+          <article class="post-content">
+             {{ content }}
+          </article>
+       </div>
+       {% if page.previous != null %}
+       <div><span>上一篇:</span> <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+       {% endif %}
+       {% if page.next != null %}
+       <div><span>下一篇:</span> <a href="{{ page.next.url }}"> {{ page.next.title }}</a></div>
+       {% endif %}
+       
+       <!-- Duoshuo Comment BEGIN -->
+		<div id="comments">
+		    <div class="ds-thread" {% if page.id %}data-thread-key="{{ page.id }}"{% endif %}  data-title="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"></div>
+		</div>
+		<!-- Duoshuo Comment END -->
+    </div>
+  </div> 
+</div>
+<div id="content"></div>
+<div id="content_img">
+      <img src="" id="img_dis" onclick="closeContent(this)" /><br/>
+      <input id="btn1" type="button" value="放大" onclick="ImageSuofang(true)" /> 
+      <input id="btn2" type="button" value="缩小" onclick="ImageSuofang(false)" /> 
+</div>

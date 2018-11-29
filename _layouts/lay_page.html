@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<style type="text/css">
+   #menu{
+    list-style: none;
+  }
+  #menu ul{
+    list-style: none;
+    display: flex;
+    margin:0px;
+    padding-left:0px;
+  }
+  #menu ul li{
+    float: left;
+    display: block;
+    text-align: center;
+    border:1px solid #D2D2D2;
+    padding:10px;
+    width:80px;
+    cursor: pointer;
+  }
+  #menu ul li.selected{
+    background-color: #CFD4B6;
+  }
+  .conts{
+    border:1px solid #D2D2D5;
+    width:100%;
+    height: 570px;
+    display: none;
+    flex-wrap: wrap;
+    padding:20px;
+    overflow: auto;
+  }
+  .conts.selected{
+    display: flex;
+  }
+  .imageSize{
+    width:160px;
+    height: 160px;
+  }
+  
+</style>
+<script type="text/javascript">
+    $(function(){
+       $("#menu ul li").each(function(i,item){
+          item.onclick=function(){
+             clearall();
+             var v=$(this).attr("data-target");
+             $("#"+v).addClass("selected");
+             $(this).addClass("selected");
+          }
+      });
+    });
+    function clearall(){
+        $("#menu ul li.selected").each(function(i,item){
+            $(item).removeClass("selected");
+        });
+        $("#content .selected").each(function(i,item){
+            $(item).removeClass("selected");
+        });
+    }
+</script>
+<div>
+  {{ content }}
+</div>

@@ -1,0 +1,116 @@
+#user-define
+myopen: [
+{type: "codingnet" , icon: "/images/coding.png" , projects: [
+{name: "fsTable" , url: "https://coding.net/u/lvyafei/p/fsTable/git" , category: "JS" , infos: "自定义树状菜单"},
+{name: "fsKnockoutjs" , url: "https://coding.net/u/lvyafei/p/fs-Knockoutjs/git" , category: "JS" , infos: "knockout学习示例" }
+]},
+{type: "github" , icon: "/images/github.png" , projects: [
+{name: "NodeJS" , url: "https://github.com/lvyafei/NodeJS" , category: "JS" , infos: "NodeJS入门示例"},
+{name: "Designpatterns" , url: "https://github.com/lvyafei/Designpatterns" ,  category: "Java" , infos: "23种设计模式"},
+{name: "AlgorithmSolutions" , url: "https://github.com/lvyafei/AlgorithmSolutions" ,  category: "Java" , infos: "常用算法分析"}
+]},
+{type: "bitbucket" , icon: "/images/bitbucket.png" , projects: [
+{name: "FS" , url: "https://bitbucket.org/lvyafei/fs" ,  category: "Java" , infos: "个性化阅读"}
+]}
+]
+
+hotsite: [
+{id: "id_front" , title: "前端" , site: [
+{url: "http://fex.baidu.com/blog/2014/06/web-sec-2014/?qq-pf-to=pcqq.c2c" , name: "FEX前端研发部" , icon: "http://fex.baidu.com/public/images/logo.png" },
+{url: "http://rmurphey.com/" , name: "Rebecca Murphey" , icon: "http://rmurphey.com/images/logo-600-600.png" },
+{url: "http://get.jobdeer.com/7827.get" , name: "Get社区" , icon: "http://get.jobdeer.com/static/image/bottom_logo.png" },
+{url: "http://tech.meituan.com/" , name: "美团技术团队" , icon: "http://tech.meituan.com/img/logo.png" },
+{url: "http://www.smashingmagazine.com/" , name: "smashing magazine" , icon: "http://media.mediatemple.netdna-cdn.com/wp-content/themes/smashing-magazine/assets/images/logo.png" },
+{url: "http://frontenddev.org/" , name: "fed社区" , icon: "http://s.ydr.me/@/res/20150729165343253734890598" },
+{url: "http://davidwalsh.name/flexbox-dice" , name: "DWB" , icon: "http://davidwalsh.name/wp-content/themes/punky/images/logo.png" },
+{url: "https://css-tricks.com/" , name: "CSS-trick" , icon: "https://s3.buysellads.com/1250418/230902-1405453869.png" },
+{url: "https://scotch.io/tag/css" , name: "scotch" , icon: "https://cask.scotch.io/2015/06/scotch-logo.png" },
+{url: "http://winter-cn.cnblogs.com/" , name: "winter老师" , icon: "http://articles.csdn.net/uploads/allimg/101210/79_101210122908_1.jpg" }
+]},
+{id: "id_server" , title: "后端架构" , site: [
+{url: "http://timyang.net/" , name: "Tim Yang" , icon: "http://timyang.net/blog/wp-content/uploads/2014/12/timyang_qrcode.png" },
+{url: "http://yanyiwu.com/" , name: "yanyiwu" , icon: "http://7viirv.com1.z0.glb.clouddn.com/260433a4c2_6CF697B2E869546A424137232E1D4946.png" }
+]},
+{id: "id_design" , title: "设计" , site: [
+{url: "http://www.mtedu.com/" , name: "馒头商学院" , icon: "http://www.mtedu.com/images/newlogo.png" },
+{url: "http://www.yuanxingku.com/" , name: "原形库" , icon: "http://www.yuanxingku.com/template/dean_v_140914/deancss/logo.png" },
+{url: "http://www.uisdc.com/" , name: "优设" , icon: "http://www.uisdc.com/wp-content/themes/oxygen/images/sdc_icon.png" },
+{url: "http://www.zcool.com.cn/" , name: "站酷" , icon: "http://static.zcool.com.cn/v3.5.151020.0/zcool/images/logo.png?v2" }
+]},
+{id: "id_jike" , title: "极客" , site: [
+{url: "https://learn.adafruit.com/adafruit-raspberry-pi-lesson-7-remote-control-with-vnc" , name: "adafruit" , icon: "https://learn.adafruit.com/logos/logo_2x.png" },
+{url: "http://www.geekfan.net/category/hardware/raspberry-pi-hardware/" , name: "极客范" , icon: "http://www.geekfan.net/wp-content/uploads/geekfan-logo.png" },
+{url: "https://www.raspberrypi.org/" , name: "树莓派" ,icon: "https://www.raspberrypi.org/wp-content/themes/mind-control/images/logo-black.png" },
+{url: "http://shumeipai.nxez.com/" , name: "树莓派实验室" ,icon: "http://shumeipai.nxez.com/wp-content/themes/flato/img/shumeilogo.png" },
+{url: "http://www.shumeipai.net/forum.php" , name: "树莓派论坛" , icon: "http://www.shumeipai.net/template/win8mi_10th_shuzi/src/logo.png"},
+{url: "http://www.geekpark.net/topics/186573" , name: "极客公园" , icon: "http://7mnpep.com2.z0.glb.qiniucdn.com/uploads/image/file/ab/6d/ab6da8a55176fdf187fbab0a7a012b79.jpg" },
+{url: "http://www.cubie.cc/forum.php" , name: "cubieboard论坛" , icon: "http://www.cubie.cc/template/cubie/image/logo.png" },
+{url: "http://drops.wooyun.org/" , name: "乌云" , icon: "/images/noperson.png" }
+]},
+{id:  "id_other" , title: "其它" , site: [
+{url: "http://lethain.com/" , name: "Irrational Exuberance" , icon: "http://lethain.com/static/author.png" },
+{url: "http://sunjiajia.com/" , name: "安卓猴" , icon: "http://sunjiajia.com/img/logo.png" },
+{url: "http://hukai.me/blog/archives/" , name: "胡凯" , icon: "http://hukai.me/images/android_perf_patterns_season_3.png" },
+{url: "http://youxiputao.com/" , name: "游戏葡萄" , icon: "http://cdn.youxiputao.com/static/img/logo.png" },
+{url: "http://havee.me/internet/2013-11/jekyll-liquid-designers.html" , name: "Jekyll扩展的Liquid设计" , icon: "http://jekyll.bootcss.com/img/logo-2x.png"  },
+{url: "http://ju.outofmemory.cn/entry/98471" , name: "Jekyll语法简单笔记" , icon: "http://jekyll.bootcss.com/img/logo-2x.png" },
+{url: "http://jekyll.bootcss.com/" , name: "Jekyll bootcss" , icon: "http://jekyll.bootcss.com/img/logo-2x.png" }
+]}
+]
+
+books: [
+{id: "id_concurrent" , title: "并发编程" , booklist: [
+{name: "Java并发编程实战" , icon: "/images/books/Java并发编程实战.png" , douban: "https://book.douban.com/subject/10484692/" },
+{name: "Java并发编程实践" , icon: "/images/books/Java并发编程实践.png" , douban: "https://book.douban.com/subject/2148132/" },
+{name: "七周七并发模型" , icon: "/images/books/七周七并发模型.png" , douban: "https://book.douban.com/subject/26337939/" },
+{name: "Java并发编程的艺术" , icon: "/images/books/Java并发编程的艺术.png" , douban: "https://book.douban.com/subject/26591326/" },
+{name: "深入理解Java虚拟机-JVM高级特性与最佳实践" , icon: "/images/books/深入理解Java虚拟机.png" , douban: "https://book.douban.com/subject/24722612/" },
+{name: "Redis设计与实现" , icon: "/images/books/Redis设计与实现.png" , douban: "https://book.douban.com/subject/25900156/" }
+]},
+{id: "id_connection" , title: "网络通信" , booklist: [
+{name: "unix网络编程-卷1" , icon: "/images/books/unix网络编程-卷1.png" , douban: "https://book.douban.com/subject/4859464/" },
+{name: "unix网络编程-卷2" , icon: "/images/books/unix网络编程-卷2.png" , douban: "https://book.douban.com/subject/4118577/" },
+{name: "Netty权威指南" , icon: "/images/books/Netty权威指南.PNG" , douban: "https://book.douban.com/subject/26373138/"},
+{name: "TCP-IP详解卷1" , icon: "/images/books/tcpip-卷一.png" , douban: "https://book.douban.com/subject/1088054/" },
+{name: "TCP-IP详解卷2" , icon: "/images/books/tcpip-卷二.png" , douban: "https://book.douban.com/subject/1087767/" },
+{name: "TCP-IP详解卷3" , icon: "/images/books/tcpip-卷三.png" , douban: "https://book.douban.com/subject/1058634/" },
+{name: "HTTP权威指南" , icon: "/images/books/HTTP权威指南.png" , douban: "https://book.douban.com/subject/10746113/" }
+]},
+{id: "id_framework" , title: "Java框架" , booklist: [
+{name: "spring技术内幕" , icon: "/images/books/spring技术内幕.png" , douban: "https://book.douban.com/subject/10470970/" },
+{name: "spring源码深度解析" , icon: "/images/books/spring源码深度解析.png" , douban: "https://book.douban.com/subject/25866350/" },
+{name: "Spring实战" , icon: "/images/books/Spring实战3.png" , douban: "https://book.douban.com/subject/24714203/" },
+{name: "深入剖析Tomcat" , icon: "/images/books/深入剖析tomcat.png" , douban: "https://book.douban.com/subject/10426640/" }
+]},
+{id: "id_bigdata" , title: "大数据" , booklist: [
+{name: "Hadoop权威指南" , icon: "/images/books/Hadoop权威指南.png" , douban: "https://book.douban.com/subject/26206050/" },
+{name: "Lucene实战" , icon: "/images/books/Lucene实战.png" , douban: "https://book.douban.com/subject/6440615/" },
+{name: "Solr In Action" , icon: "/images/books/SolrInAction.png" , douban: "https://book.douban.com/subject/23133628/" },
+{name: "recommender systems handbook" , icon: "/images/books/recommender-handbook.png" , douban: "https://book.douban.com/subject/3695850/" },
+{name: "推荐系统实战" , icon: "/images/books/推荐系统实战.png" , douban: "https://book.douban.com/subject/10769749/" },
+{name: "数据挖掘导论" , icon: "/images/books/数据挖掘导论.png" , douban: "https://book.douban.com/subject/5377669/" },
+{name: "机器学习" , icon: "/images/books/机器学习.png" , douban: "https://book.douban.com/subject/26708119/" },
+{name: "统计学习方法" , icon: "/images/books/统计学习方法.png" , douban: "https://book.douban.com/subject/10590856/" }
+]},
+{id:  "id_other" , title: "其它" , booklist: [
+{name: "InnoDB存储引擎" , icon: "/images/books/InnoDB存储引擎.png" , douban: "https://book.douban.com/subject/24708143/" },
+{name: "高性能MySQL" , icon: "/images/books/高性能MySQL.png" , douban: "https://book.douban.com/subject/23008813/"},
+{name: "分布式系统原理介绍" , icon: "/images/books/分布式系统原理介绍.png" , douban: "https://book.douban.com/subject/3108801/" },
+{name: "大型网站系统与Java中间件实战" , icon: "/images/books/大型网站系统与Java中间件实战.png" , douban: "https://book.douban.com/subject/25867042/" },
+{name: "大型网站技术架构" , icon: "/images/books/大型网站技术架构.png" , douban: "https://book.douban.com/subject/25723064/" },
+{name: "跟我学Shiro" , icon: "/images/books/跟我学Shiro.png" , douban: "http://lvyafei.github.io/books/" }
+]},
+{id:  "id_nodownload" , title: "未读" , booklist: [
+{name: "HotSpot实战" , icon: "/images/books/hotspot.jpg" , douban: "https://book.douban.com/subject/25847620/" },
+{name: "Java多线程编程核心技术" , icon: "/images/books/java多线程编程核心技术.jpg" , douban: "https://book.douban.com/subject/26555197/" },
+{name: "Effective java 中文版" , icon: "/images/books/effectivejava.jpg" , douban: "https://book.douban.com/subject/3360807/" },
+{name: "深入分析Java Web技术内幕" , icon: "/images/books/深入分析javaWEB.jpg" , douban: "https://book.douban.com/subject/25953851/" },
+{name: "从Paxos到Zookeeper" , icon: "/images/books/从Paxos到Zookeeper.jpg" , douban: "https://book.douban.com/subject/26292004/" },
+{name: "大数据日知录" , icon: "/images/books/大数据日知录.jpg" , douban: "https://book.douban.com/subject/25984046/" },
+{name: "ZooKeeper:分布式过程协同技术详解" , icon: "/images/books/ZooKeeper分布式过程协同技术详解.jpg" , douban: "https://book.douban.com/subject/26766807/" },
+{name: "分布式Java应用" , icon: "/images/books/分布式Java应用.jpg" , douban: "https://book.douban.com/subject/4848587/" },
+{name: "分布式服务框架：原理与实践" , icon: "/images/books/分布式服务框架原理与实践.jpg" , douban: "https://book.douban.com/subject/26702824/" },
+{name: "分布式系统" , icon: "/images/books/分布式系统.jpg" , douban: "https://book.douban.com/subject/21624776/" },
+{name: "编译原理" , icon: "/images/books/compiler.jpg" , douban: "https://book.douban.com/subject/3296317/" }
+]}
+]

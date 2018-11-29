@@ -1,0 +1,59 @@
+---
+layout: default
+published: true
+---
+
+<div class="home container">
+ <div class="row">
+  <div class="col-md-3">
+    <div class="well" style="background-color: #FFF;border: 0px;background-image: none;">
+      <!-- <image style="width:230px;height:230px" src="/images/me.jpg" class="img-circle" alt="me" /> -->
+      <div style="width:230px;height:230px" id="mypic" class="img-circle" alt="me"></div>
+      <h3>feisa</h3>
+      <hr style="border:1px solid;color:#E3DEDE"/>
+      <div class="well">
+        <h5>开源代码</h5>
+         {% for open in site.data.custom.myopen %}
+           <image src="{{ open.icon }}" style="width:32px;height:32px" />
+           {% for pro in open.projects %}
+           <div class="row">
+            <div class="col-md-3">
+               <span class="badge">{{ pro.category }}</span>
+            </div>
+            <div class="col-md-9">
+               <a href="{{ pro.url }}" target="_blank">{{ pro.name }}</a><br/>
+               <span>{{ pro.infos }}</span>
+            </div>
+            </div>
+           {% endfor %}
+         {% endfor %}
+      </div>
+      <div class="well">
+      <h5>最新评论</h5>
+       <!-- 多说最新评论 start -->
+	  <div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+     <!-- 多说最新评论 end -->
+    </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+  <div class="row">
+    {% for post in site.posts limit:10 %}
+      <div class="well1 well-lg1 col-md-5" style="background-color:#f5f5f5;border:1px solid #e3e3e3;padding:20px;margin:10px 20px;height:300px;background-image:url('images/文章背景1.jpg');background-size: cover;background-position: center;">
+        {% if post.categories != empty %}
+        <span class="post-meta"><i class="glyphicon glyphicon-paperclip"></i> {{ post.categories }}</span>
+        {% endif %}
+        {% if post.tags != empty %}
+        <span class="post-meta"><i class="glyphicon glyphicon-tag"></i> {{ post.tags }}</span>
+        {% endif %}
+        <h4>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h4>
+        <div style="height:120px;overflow:hidden;">{{ post.excerpt | replace: '<ul id="meuid">' , '<ul id="meuid" style="display:none">' | remove: '<img>' }}</div>
+        <span class="post-meta" style="float:right">{{ post.date | date: "%m -%d -%Y" }}</span>
+      </div>
+    {% endfor %}
+   </div>
+  </div>
+ </div>
+</div>
